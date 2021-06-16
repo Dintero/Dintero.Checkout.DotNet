@@ -1,0 +1,10 @@
+# Dintero.OpenApiClient.Checkout.Model.SettlementStatus
+Overall settlement status after the events 
+
+## Properties
+
+Name | Type | Description | Notes
+------------ | ------------- | ------------- | -------------
+
+[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+
