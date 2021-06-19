@@ -102,7 +102,7 @@ namespace Dintero.OpenApiClient.Checkout.Api
         /// <param name="options"></param>
         /// <param name="includeSession">Include all details about the session created  (optional)</param>
         /// <returns>InlineResponse2008</returns>
-        InlineResponse2008 CheckoutSessionPost(UNKNOWN_BASE_TYPE options, bool? includeSession = default(bool?));
+        InlineResponse2008 CheckoutSessionPost(SessionOptions options, bool? includeSession = default(bool?));
 
         /// <summary>
         /// Create a checkout session
@@ -114,7 +114,7 @@ namespace Dintero.OpenApiClient.Checkout.Api
         /// <param name="options"></param>
         /// <param name="includeSession">Include all details about the session created  (optional)</param>
         /// <returns>ApiResponse of InlineResponse2008</returns>
-        ApiResponse<InlineResponse2008> CheckoutSessionPostWithHttpInfo(UNKNOWN_BASE_TYPE options, bool? includeSession = default(bool?));
+        ApiResponse<InlineResponse2008> CheckoutSessionPostWithHttpInfo(SessionOptions options, bool? includeSession = default(bool?));
         /// <summary>
         /// Create checkout session from profile
         /// </summary>
@@ -125,7 +125,7 @@ namespace Dintero.OpenApiClient.Checkout.Api
         /// <param name="options"></param>
         /// <param name="includeSession">Include all details about the session created  (optional)</param>
         /// <returns>InlineResponse2008</returns>
-        InlineResponse2008 CheckoutSessionProfilePost(UNKNOWN_BASE_TYPE options, bool? includeSession = default(bool?));
+        InlineResponse2008 CheckoutSessionProfilePost(Session options, bool? includeSession = default(bool?));
 
         /// <summary>
         /// Create checkout session from profile
@@ -137,7 +137,7 @@ namespace Dintero.OpenApiClient.Checkout.Api
         /// <param name="options"></param>
         /// <param name="includeSession">Include all details about the session created  (optional)</param>
         /// <returns>ApiResponse of InlineResponse2008</returns>
-        ApiResponse<InlineResponse2008> CheckoutSessionProfilePostWithHttpInfo(UNKNOWN_BASE_TYPE options, bool? includeSession = default(bool?));
+        ApiResponse<InlineResponse2008> CheckoutSessionProfilePostWithHttpInfo(Session options, bool? includeSession = default(bool?));
         /// <summary>
         /// Update checkout session details
         /// </summary>
@@ -148,7 +148,7 @@ namespace Dintero.OpenApiClient.Checkout.Api
         /// <param name="sessionId">The session ID</param>
         /// <param name="options"></param>
         /// <returns>InlineResponse2009</returns>
-        InlineResponse2009 CheckoutSessionPut(string sessionId, UNKNOWN_BASE_TYPE options);
+        InlineResponse2009 CheckoutSessionPut(string sessionId, UpdateSessionOptions options);
 
         /// <summary>
         /// Update checkout session details
@@ -160,7 +160,7 @@ namespace Dintero.OpenApiClient.Checkout.Api
         /// <param name="sessionId">The session ID</param>
         /// <param name="options"></param>
         /// <returns>ApiResponse of InlineResponse2009</returns>
-        ApiResponse<InlineResponse2009> CheckoutSessionPutWithHttpInfo(string sessionId, UNKNOWN_BASE_TYPE options);
+        ApiResponse<InlineResponse2009> CheckoutSessionPutWithHttpInfo(string sessionId, UpdateSessionOptions options);
         /// <summary>
         /// List checkout sessions
         /// </summary>
@@ -287,7 +287,7 @@ namespace Dintero.OpenApiClient.Checkout.Api
         /// <param name="includeSession">Include all details about the session created  (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of InlineResponse2008</returns>
-        System.Threading.Tasks.Task<InlineResponse2008> CheckoutSessionPostAsync(UNKNOWN_BASE_TYPE options, bool? includeSession = default(bool?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+        System.Threading.Tasks.Task<InlineResponse2008> CheckoutSessionPostAsync(SessionOptions options, bool? includeSession = default(bool?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
 
         /// <summary>
         /// Create a checkout session
@@ -300,7 +300,7 @@ namespace Dintero.OpenApiClient.Checkout.Api
         /// <param name="includeSession">Include all details about the session created  (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of ApiResponse (InlineResponse2008)</returns>
-        System.Threading.Tasks.Task<ApiResponse<InlineResponse2008>> CheckoutSessionPostWithHttpInfoAsync(UNKNOWN_BASE_TYPE options, bool? includeSession = default(bool?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+        System.Threading.Tasks.Task<ApiResponse<InlineResponse2008>> CheckoutSessionPostWithHttpInfoAsync(SessionOptions options, bool? includeSession = default(bool?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
         /// <summary>
         /// Create checkout session from profile
         /// </summary>
@@ -312,7 +312,7 @@ namespace Dintero.OpenApiClient.Checkout.Api
         /// <param name="includeSession">Include all details about the session created  (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of InlineResponse2008</returns>
-        System.Threading.Tasks.Task<InlineResponse2008> CheckoutSessionProfilePostAsync(UNKNOWN_BASE_TYPE options, bool? includeSession = default(bool?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+        System.Threading.Tasks.Task<InlineResponse2008> CheckoutSessionProfilePostAsync(Session options, bool? includeSession = default(bool?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
 
         /// <summary>
         /// Create checkout session from profile
@@ -325,7 +325,7 @@ namespace Dintero.OpenApiClient.Checkout.Api
         /// <param name="includeSession">Include all details about the session created  (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of ApiResponse (InlineResponse2008)</returns>
-        System.Threading.Tasks.Task<ApiResponse<InlineResponse2008>> CheckoutSessionProfilePostWithHttpInfoAsync(UNKNOWN_BASE_TYPE options, bool? includeSession = default(bool?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+        System.Threading.Tasks.Task<ApiResponse<InlineResponse2008>> CheckoutSessionProfilePostWithHttpInfoAsync(Session options, bool? includeSession = default(bool?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
         /// <summary>
         /// Update checkout session details
         /// </summary>
@@ -337,7 +337,7 @@ namespace Dintero.OpenApiClient.Checkout.Api
         /// <param name="options"></param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of InlineResponse2009</returns>
-        System.Threading.Tasks.Task<InlineResponse2009> CheckoutSessionPutAsync(string sessionId, UNKNOWN_BASE_TYPE options, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+        System.Threading.Tasks.Task<InlineResponse2009> CheckoutSessionPutAsync(string sessionId, UpdateSessionOptions options, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
 
         /// <summary>
         /// Update checkout session details
@@ -350,7 +350,7 @@ namespace Dintero.OpenApiClient.Checkout.Api
         /// <param name="options"></param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of ApiResponse (InlineResponse2009)</returns>
-        System.Threading.Tasks.Task<ApiResponse<InlineResponse2009>> CheckoutSessionPutWithHttpInfoAsync(string sessionId, UNKNOWN_BASE_TYPE options, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+        System.Threading.Tasks.Task<ApiResponse<InlineResponse2009>> CheckoutSessionPutWithHttpInfoAsync(string sessionId, UpdateSessionOptions options, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
         /// <summary>
         /// List checkout sessions
         /// </summary>
@@ -934,7 +934,7 @@ namespace Dintero.OpenApiClient.Checkout.Api
         /// <param name="options"></param>
         /// <param name="includeSession">Include all details about the session created  (optional)</param>
         /// <returns>InlineResponse2008</returns>
-        public InlineResponse2008 CheckoutSessionPost(UNKNOWN_BASE_TYPE options, bool? includeSession = default(bool?))
+        public InlineResponse2008 CheckoutSessionPost(SessionOptions options, bool? includeSession = default(bool?))
         {
             Dintero.OpenApiClient.Checkout.Client.ApiResponse<InlineResponse2008> localVarResponse = CheckoutSessionPostWithHttpInfo(options, includeSession);
             return localVarResponse.Data;
@@ -947,7 +947,7 @@ namespace Dintero.OpenApiClient.Checkout.Api
         /// <param name="options"></param>
         /// <param name="includeSession">Include all details about the session created  (optional)</param>
         /// <returns>ApiResponse of InlineResponse2008</returns>
-        public Dintero.OpenApiClient.Checkout.Client.ApiResponse<InlineResponse2008> CheckoutSessionPostWithHttpInfo(UNKNOWN_BASE_TYPE options, bool? includeSession = default(bool?))
+        public Dintero.OpenApiClient.Checkout.Client.ApiResponse<InlineResponse2008> CheckoutSessionPostWithHttpInfo(SessionOptions options, bool? includeSession = default(bool?))
         {
             // verify the required parameter 'options' is set
             if (options == null)
@@ -1007,7 +1007,7 @@ namespace Dintero.OpenApiClient.Checkout.Api
         /// <param name="includeSession">Include all details about the session created  (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of InlineResponse2008</returns>
-        public async System.Threading.Tasks.Task<InlineResponse2008> CheckoutSessionPostAsync(UNKNOWN_BASE_TYPE options, bool? includeSession = default(bool?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        public async System.Threading.Tasks.Task<InlineResponse2008> CheckoutSessionPostAsync(SessionOptions options, bool? includeSession = default(bool?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
         {
             Dintero.OpenApiClient.Checkout.Client.ApiResponse<InlineResponse2008> localVarResponse = await CheckoutSessionPostWithHttpInfoAsync(options, includeSession, cancellationToken).ConfigureAwait(false);
             return localVarResponse.Data;
@@ -1021,7 +1021,7 @@ namespace Dintero.OpenApiClient.Checkout.Api
         /// <param name="includeSession">Include all details about the session created  (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of ApiResponse (InlineResponse2008)</returns>
-        public async System.Threading.Tasks.Task<Dintero.OpenApiClient.Checkout.Client.ApiResponse<InlineResponse2008>> CheckoutSessionPostWithHttpInfoAsync(UNKNOWN_BASE_TYPE options, bool? includeSession = default(bool?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        public async System.Threading.Tasks.Task<Dintero.OpenApiClient.Checkout.Client.ApiResponse<InlineResponse2008>> CheckoutSessionPostWithHttpInfoAsync(SessionOptions options, bool? includeSession = default(bool?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
         {
             // verify the required parameter 'options' is set
             if (options == null)
@@ -1083,7 +1083,7 @@ namespace Dintero.OpenApiClient.Checkout.Api
         /// <param name="options"></param>
         /// <param name="includeSession">Include all details about the session created  (optional)</param>
         /// <returns>InlineResponse2008</returns>
-        public InlineResponse2008 CheckoutSessionProfilePost(UNKNOWN_BASE_TYPE options, bool? includeSession = default(bool?))
+        public InlineResponse2008 CheckoutSessionProfilePost(Session options, bool? includeSession = default(bool?))
         {
             Dintero.OpenApiClient.Checkout.Client.ApiResponse<InlineResponse2008> localVarResponse = CheckoutSessionProfilePostWithHttpInfo(options, includeSession);
             return localVarResponse.Data;
@@ -1096,7 +1096,7 @@ namespace Dintero.OpenApiClient.Checkout.Api
         /// <param name="options"></param>
         /// <param name="includeSession">Include all details about the session created  (optional)</param>
         /// <returns>ApiResponse of InlineResponse2008</returns>
-        public Dintero.OpenApiClient.Checkout.Client.ApiResponse<InlineResponse2008> CheckoutSessionProfilePostWithHttpInfo(UNKNOWN_BASE_TYPE options, bool? includeSession = default(bool?))
+        public Dintero.OpenApiClient.Checkout.Client.ApiResponse<InlineResponse2008> CheckoutSessionProfilePostWithHttpInfo(Session options, bool? includeSession = default(bool?))
         {
             // verify the required parameter 'options' is set
             if (options == null)
@@ -1156,7 +1156,7 @@ namespace Dintero.OpenApiClient.Checkout.Api
         /// <param name="includeSession">Include all details about the session created  (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of InlineResponse2008</returns>
-        public async System.Threading.Tasks.Task<InlineResponse2008> CheckoutSessionProfilePostAsync(UNKNOWN_BASE_TYPE options, bool? includeSession = default(bool?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        public async System.Threading.Tasks.Task<InlineResponse2008> CheckoutSessionProfilePostAsync(Session options, bool? includeSession = default(bool?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
         {
             Dintero.OpenApiClient.Checkout.Client.ApiResponse<InlineResponse2008> localVarResponse = await CheckoutSessionProfilePostWithHttpInfoAsync(options, includeSession, cancellationToken).ConfigureAwait(false);
             return localVarResponse.Data;
@@ -1170,7 +1170,7 @@ namespace Dintero.OpenApiClient.Checkout.Api
         /// <param name="includeSession">Include all details about the session created  (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of ApiResponse (InlineResponse2008)</returns>
-        public async System.Threading.Tasks.Task<Dintero.OpenApiClient.Checkout.Client.ApiResponse<InlineResponse2008>> CheckoutSessionProfilePostWithHttpInfoAsync(UNKNOWN_BASE_TYPE options, bool? includeSession = default(bool?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        public async System.Threading.Tasks.Task<Dintero.OpenApiClient.Checkout.Client.ApiResponse<InlineResponse2008>> CheckoutSessionProfilePostWithHttpInfoAsync(Session options, bool? includeSession = default(bool?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
         {
             // verify the required parameter 'options' is set
             if (options == null)
@@ -1232,7 +1232,7 @@ namespace Dintero.OpenApiClient.Checkout.Api
         /// <param name="sessionId">The session ID</param>
         /// <param name="options"></param>
         /// <returns>InlineResponse2009</returns>
-        public InlineResponse2009 CheckoutSessionPut(string sessionId, UNKNOWN_BASE_TYPE options)
+        public InlineResponse2009 CheckoutSessionPut(string sessionId, UpdateSessionOptions options)
         {
             Dintero.OpenApiClient.Checkout.Client.ApiResponse<InlineResponse2009> localVarResponse = CheckoutSessionPutWithHttpInfo(sessionId, options);
             return localVarResponse.Data;
@@ -1245,7 +1245,7 @@ namespace Dintero.OpenApiClient.Checkout.Api
         /// <param name="sessionId">The session ID</param>
         /// <param name="options"></param>
         /// <returns>ApiResponse of InlineResponse2009</returns>
-        public Dintero.OpenApiClient.Checkout.Client.ApiResponse<InlineResponse2009> CheckoutSessionPutWithHttpInfo(string sessionId, UNKNOWN_BASE_TYPE options)
+        public Dintero.OpenApiClient.Checkout.Client.ApiResponse<InlineResponse2009> CheckoutSessionPutWithHttpInfo(string sessionId, UpdateSessionOptions options)
         {
             // verify the required parameter 'sessionId' is set
             if (sessionId == null)
@@ -1306,7 +1306,7 @@ namespace Dintero.OpenApiClient.Checkout.Api
         /// <param name="options"></param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of InlineResponse2009</returns>
-        public async System.Threading.Tasks.Task<InlineResponse2009> CheckoutSessionPutAsync(string sessionId, UNKNOWN_BASE_TYPE options, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        public async System.Threading.Tasks.Task<InlineResponse2009> CheckoutSessionPutAsync(string sessionId, UpdateSessionOptions options, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
         {
             Dintero.OpenApiClient.Checkout.Client.ApiResponse<InlineResponse2009> localVarResponse = await CheckoutSessionPutWithHttpInfoAsync(sessionId, options, cancellationToken).ConfigureAwait(false);
             return localVarResponse.Data;
@@ -1320,7 +1320,7 @@ namespace Dintero.OpenApiClient.Checkout.Api
         /// <param name="options"></param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of ApiResponse (InlineResponse2009)</returns>
-        public async System.Threading.Tasks.Task<Dintero.OpenApiClient.Checkout.Client.ApiResponse<InlineResponse2009>> CheckoutSessionPutWithHttpInfoAsync(string sessionId, UNKNOWN_BASE_TYPE options, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        public async System.Threading.Tasks.Task<Dintero.OpenApiClient.Checkout.Client.ApiResponse<InlineResponse2009>> CheckoutSessionPutWithHttpInfoAsync(string sessionId, UpdateSessionOptions options, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
         {
             // verify the required parameter 'sessionId' is set
             if (sessionId == null)
